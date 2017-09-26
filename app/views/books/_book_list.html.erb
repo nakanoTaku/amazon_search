@@ -1,0 +1,12 @@
+<% if @books.present? %>
+  <% @books.each do |book| %>
+    <div class="item col-xs-12 col-lg-2">
+      <div class="list">
+        <%= image_tag(book.image_url, style: "width: 150px;height: 200px;display: inline-block;") %>
+        <p><%= link_to book.title, book.url %></p>
+        <p><%= book.author %></p>
+        <p><%= book.total_results %></p>
+      </div>
+    </div>
+  <% end %>
+<% end %>

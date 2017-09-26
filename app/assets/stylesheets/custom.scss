@@ -1,0 +1,18 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+}
+
+.search-result {
+  margin-top: 20px;
+}
+
+.list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item {
+  height: 350px;
+}
